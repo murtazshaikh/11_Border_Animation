@@ -11,51 +11,58 @@ body {
   justify-content: center;
   align-items: center;
 }
-.frem {
+.frame {
   width: 16rem;
   height: 16rem;
+
   overflow: hidden;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
   position: relative;
 }
-.frem .rotat {
+.frame .rotate {
   width: 30rem;
   height: 15rem;
   background: #00ff88;
+
   position: absolute;
-  animation: rotats 3s infinite ease-in-out;
+
+  animation: rotate 3s infinite ease-in-out;
 }
-.frem .cant {
+.frame .plane {
   width: 254px;
   height: 254px;
   background: rgb(17, 17, 17);
+
   z-index: 1;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.frem .cant .area {
+.frame .plane .area {
   width: 230px;
   height: 230px;
   background: rgb(17, 17, 17);
   border: 1px solid #00ff88;
+
   z-index: 2;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.frem .cant .area img {
-  filter: invert(1);
+.frame .plane .area img {
   width: 6rem;
   border-radius: 50%;
+
+  filter: invert(1);
 }
 
-@keyframes rotats {
+@keyframes rotate {
   100% {
     transform: rotate(-360deg);
   }
